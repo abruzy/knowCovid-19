@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+#container {
+  font-family: 'Lato', sans-serif;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('/img/bg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.icon {
+  filter: invert();
+  height: 5rem;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.desc {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.follow {
+  font-size: 1.2rem;
+}
+
+.social-icons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons img {
+  height: 1.5rem;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .heading {
+    font-size: 1.2rem;
+  }
+
+  .desc {
+    font-size: 0.8rem;
+    /* text-align: justify;  */
+  }
+
+  .follow {
+    font-size: 0.8rem;
+    /* text-align: justify; */
+  }
+}
